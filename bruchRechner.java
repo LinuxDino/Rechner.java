@@ -37,24 +37,24 @@ public class bruchRechner {
         txtfldN2.setActivated(false);
     }
 
-    public void txtfldBruch2Aktion() {
+    public void txtfldZ2Aktion() {
         txtfldZ2.setActivated(true);
         txtfldZ1.setActivated(false);
         txtfldN1.setActivated(false);
         txtfldN2.setActivated(false);
     }
-    public void txtfldBruch3Aktion() {
+    public void txtfldN1Aktion() {
         txtfldN1.setActivated(true);
-        txtfldZ2.setActivated(false);
+        txtfldN2.setActivated(false);
         txtfldZ1.setActivated(false);
-        txtfldBruch4.setActivated(false);
+        txtfldZ2.setActivated(false);
     }
 
-    public void txtfldBruch4Aktion() {
-        txtfldBruch4.setActivated(true);
-        txtfldBruch1.setActivated(false);
-        txtfldBruch2.setActivated(false);
-        txtfldBruch3.setActivated(false);
+    public void txtfldN2Aktion() {
+        txtfldN2.setActivated(true);
+        txtfldN1.setActivated(false);
+        txtfldZ1.setActivated(false);
+        txtfldZ2.setActivated(false);
     }
 
     public void btnPlusAktion() {
@@ -88,17 +88,17 @@ public class bruchRechner {
 
     public void fuehreAus() {
         while(true) {
-            if  (txtfldBruch1.clicked()) {
-                txtfldBruch1Aktion();
+            if  (txtfldZ1.clicked()) {
+                txtfldZ1Aktion();
             }
-            if (txtfldBruch2.clicked()) {
-                txtfldBruch2Aktion();
+            if (txtfldZ2.clicked()) {
+                txtfldZ2Aktion();
             }
-            if  (txtfldBruch3.clicked()) {
-                txtfldBruch3Aktion();
+            if  (txtfldN1.clicked()) {
+                txtfldN1Aktion();
             }
-            if (txtfldBruch4.clicked()) {
-                txtfldBruch4Aktion();
+            if (txtfldN2.clicked()) {
+                txtfldN2Aktion();
             }
             if (btnPlus.clicked()) {
                 btnPlusAktion();
