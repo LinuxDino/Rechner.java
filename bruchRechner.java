@@ -16,7 +16,7 @@ public class bruchRechner {
     public bruchRechner() {
 
 
-        view = new View(250, 170, "Rechner");
+        view = new View(250, 170, "Bruch-Rechner");
         txtfldZ1 = new Textfield(10, 60, 40, 30, "", view);
         txtfldZ2 = new Textfield(90, 60, 40, 30, "", view);
         txtfldN1 = new Textfield(10, 90, 40, 30, "", view);
@@ -58,32 +58,47 @@ public class bruchRechner {
     }
 
     public void btnPlusAktion() {
-        int zahl1 = Tools.stringToInt(txtfldBruch1.getText());
-        int zahl2 = Tools.stringToInt(txtfldBruch2.getText());
-        int ergebnis = zahl1 + zahl2;
-        lblErgebnis1.setLabelText(""+ergebnis);
+        int z1 = Tools.stringToInt(txtfldZ1.getText());
+        int z2 = Tools.stringToInt(txtfldZ2.getText());
+        int n1 = Tools.stringToInt(txtfldN1.getText());
+        int n2 = Tools.stringToInt(txtfldN2.getText());
+        int ergebnis1 = z1 * n2 + z2 * n1;
+        int ergebnis2 = n1 * n2;
+        lblErgebnis1.setLabelText(""+ergebnis1);
+        lblErgebnis2.setLabelText(""+ergebnis2);
     }
 
     public void btnMinusAktion() {
-        int zahl1 = Tools.stringToInt(txtfldBruch1.getText());
-        int zahl2 = Tools.stringToInt(txtfldBruch2.getText());
-        int ergebnis = zahl1 - zahl2;
-        lblErgebnis1.setLabelText(""+ergebnis);
+        int z1 = Tools.stringToInt(txtfldZ1.getText());
+        int z2 = Tools.stringToInt(txtfldZ2.getText());
+        int n1 = Tools.stringToInt(txtfldN1.getText());
+        int n2 = Tools.stringToInt(txtfldN2.getText());
+        int ergebnis1 = z1 - z2;
+        int ergebnis2 = n1 - n2;
+        lblErgebnis1.setLabelText(""+ergebnis1);
+        lblErgebnis2.setLabelText(""+ergebnis2);
     }
 
     public void btnMalAktion() {
-        int zahl1 = Tools.stringToInt(txtfldBruch1.getText());
-        int zahl2 = Tools.stringToInt(txtfldBruch2.getText());
-        int zahl3 = Tools.stringToInt(txtfldBruch3.getText());
-        int ergebnis = zahl1 * zahl2;
-        lblErgebnis1.setLabelText(""+ergebnis);
+        int z1 = Tools.stringToInt(txtfldZ1.getText());
+        int z2 = Tools.stringToInt(txtfldZ2.getText());
+        int n1 = Tools.stringToInt(txtfldN1.getText());
+        int n2 = Tools.stringToInt(txtfldN2.getText());
+        int ergebnis1 = z1 * z2;
+        int ergebnis2 = n1 * n2;
+        lblErgebnis1.setLabelText(""+ergebnis1);
+        lblErgebnis2.setLabelText(""+ergebnis2);
     }
 
     public void btnGeteiltAktion() {
-        int zahl1 = Tools.stringToInt(txtfldBruch1.getText());
-        int zahl2 = Tools.stringToInt(txtfldBruch2.getText());
-        int ergebnis = zahl1 / zahl2;
-        lblErgebnis1.setLabelText(""+ergebnis);
+        int z1 = Tools.stringToInt(txtfldZ1.getText());
+        int z2 = Tools.stringToInt(txtfldZ2.getText());
+        int n1 = Tools.stringToInt(txtfldN1.getText());
+        int n2 = Tools.stringToInt(txtfldN2.getText());
+        int ergebnis1 = z1 * n2;
+        int ergebnis2 = n1 * z2;
+        lblErgebnis1.setLabelText(""+ergebnis1);
+        lblErgebnis2.setLabelText(""+ergebnis2);
     }
 
     public void fuehreAus() {
